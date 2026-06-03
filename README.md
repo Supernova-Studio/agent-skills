@@ -18,12 +18,14 @@ npx skills add supernova-studio/agent-skills
 ### Install a specific skill
 
 ```bash
-npx skills add supernova-studio/agent-skills --skill SKILL_NAME
+npx skills add supernova-studio/agent-skills --skill capture-frontend-feedback
 ```
 
 ## Available Skills
 
-TBD
+| Skill Name                                                     | Description                                                                                                                                                                                                          |
+| -------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [capture-frontend-feedback](skills/capture-frontend-feedback/) | Capture design-system friction during frontend work (missing context, conflicts, reformulations, corrections) via the `collect_agent_feedback` MCP tool. Requires feedback collection to be enabled in your context. |
 
 ## License
 
