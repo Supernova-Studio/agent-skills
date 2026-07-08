@@ -23,9 +23,9 @@ npx skills add supernova-studio/agent-skills --skill capture-frontend-feedback
 
 ## Available Skills
 
-| Skill Name                                                     | Description                                                                                                                                                                                                          |
-| -------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [capture-frontend-feedback](skills/capture-frontend-feedback/) | Capture design-system friction during frontend work (missing context, conflicts, reformulations, corrections) via the `collect_agent_feedback` MCP tool. Requires feedback collection to be enabled in your context. |
+| Skill Name                                                     | Description                                                                                                                                                                                                             |
+| -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [capture-frontend-feedback](skills/capture-frontend-feedback/) | Capture design-system friction during frontend work (missing context, conflicts, reformulations, corrections) via the `sn_collect_agent_feedback` MCP tool. Requires feedback collection to be enabled in your context. |
 
 ## License
 
