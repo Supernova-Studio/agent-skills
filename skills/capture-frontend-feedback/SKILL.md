@@ -5,9 +5,9 @@ description: Use when frontend, UI, design-system, token, styling, motion, respo
 
 # Capture frontend feedback
 
-Persist friction seen during real frontend or design-system work. Make one `collect_agent_feedback` call per capture. Do not write local files.
+Persist friction seen during real frontend or design-system work. Make one `sn_collect_agent_feedback` call per capture. Do not write local files.
 
-Use this only when the `collect_agent_feedback` tool is available. If a capture attempt fails because feedback collection is not enabled, tell the user and continue without retrying.
+Use this only when the `sn_collect_agent_feedback` tool is available. If a capture attempt fails because feedback collection is not enabled, tell the user and continue without retrying.
 
 ## Capture when
 
@@ -30,7 +30,7 @@ Related scopes include components, tokens, styling, layout, responsive behavior,
 
 ## Tool guidance
 
-Use the `collect_agent_feedback` tool schema for the top-level payload. This skill only standardizes when to capture, how to scope the transcript, and what to put in `metadata.capture`.
+Use the `sn_collect_agent_feedback` tool schema for the top-level payload. This skill only standardizes when to capture, how to scope the transcript, and what to put in `metadata.capture`.
 
 ## `metadata.capture`
 
@@ -93,7 +93,7 @@ When a signal fires:
 2. Build the relevant `conversation`.
 3. Fill `metadata.capture`.
 4. Complete the remaining top-level tool fields from the tool schema.
-5. Call `collect_agent_feedback`.
+5. Call `sn_collect_agent_feedback`.
 6. If successful, end the user-facing reply with `Captured: signal=<signal>, category=<category>`.
 7. If the tool says feedback collection is not enabled, tell the user briefly and move on.
 
